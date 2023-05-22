@@ -6,138 +6,217 @@
     <title>我愛健身網站</title>
     <style>
         body {
-            background-color: aqua;
+            background-color: rgb(11, 157, 235);
             color: yellow;
             font-family: 標楷體, 新細明體, 微軟正黑體;
+            text-align: center
         }
 
         .sub-title {
             background-color: rgb(255, 255, 255);
             color: skyblue;
-            font-size: 32px;
+            /* 1rem = 16px */
+            font-size: 2.5rem;
+            text-align: left;
+            padding: 6px;
+        }
+
+        .title {
+            font-size: 4rem;
+            border-radius: 10px;
+            /* 上右下左 10px 20px 30px 40px */
+            margin: 20px;
+            padding: 20px 12px;
+            text-align: center;
+        }
+
+        span {
+            font-size: 1.8rem;
+            border-radius: 10px;
+        }
+
+        #container {
+            width: 80%;
+            margin: 12px auto;
+            /* auto讓左右邊各自10%  只有兩個就是上下 左右*/
+        }
+
+        img {
+            background-color: white;
+            padding: 6px;
+            width: 30%;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        /* class底下還有的img用這樣寫 */
+
+        a {
+            color: pink
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: chartreuse
+        }
+
+        li {
+            text-align: left;
+        }
+
+        small a {
+            color: black;
+        }
+
+        /* 沒點進去前是黑色的 */
+        table {
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        th {
+            background-color: gold;
+            color: whitesmoke;
+            font-size: 1.8rem;
+        }
+
+        td {
+            background-color: forestgreen;
+            color: rebeccapurple;
         }
     </style>
 
 </head>
 
 <body>
-    <!--註解區-->
-    <h1 style="color:#47A992;background-color: #482121;">何謂健身?</h1>
-    <!-- 測試 ctrl+/ -->
-    <div style="background-color: brown;color: bisque; font-family: 微軟正黑體">
-        <h3>
-            健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-        </h3>
-        <p style="font-size: large;color: aliceblue">
-            除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
+    <div id="container">
+        <!-- id是唯一 -->
+        <!--註解區-->
+        <div class="sub-title title">&diams;&nbsp;何謂健身?</div>
+        <!-- 測試 ctrl+/ -->
+        <div style="color: bisque; font-family: 微軟正黑體">
+            <h3>
+                健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+            </h3>
+            <p style="font-size: large;color: aliceblue;">
+                除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
+            </p>
+
+            <p style="background-color: aqua;color: blue;padding: 60px;border: 12px darkblue dotted;">
+                <em>如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在<br>
+                    舞臺上或者是電影螢幕上綻放光彩。</em><b><u>答案就是堅持<span style="background-color: aquamarine;">運動健身!</span></b></u>
+            </p>
+        </div>
+        <hr>
+        <div class="banner">
+            <a target="_blank" href="https://fitnesstwenty.com/benefits-of-workout/">
+                <img src="https://fitnesstwenty.com/wp-content/uploads/2020/10/71.jpg" alt="健身圖片.jpg">
+                <!-- img後面接id就變成唯一了 或直接在後面寫style="" 或用div class包起來-->
+            </a>
+        </div>
+        <div class="sub-title">&diams;&nbsp;健身的10個好處</div>
+        <ol type="a">
+            <li>增加基礎代謝率</li>
+            <li>預防疾病和提高免疫力</li>
+            <li>改善心情</li>
+            <li>改善睡眠</li>
+            <li>增加自信</li>
+            <li>增強記憶力</li>
+            <li>增強心肺能力</li>
+            <li>提升睡眠品質</li>
+            <li>釋放工作的壓力</li>
+            <li>增加肌肉助於減肥</li>
+        </ol>
+        <img src="images\pic-1.jpg" alt="pic-1.jpg" width="30%">
+        <img src="images\pic-2.jpg" alt="pic-2.jpg" width="30%">
+        <img src="images\pic-3.jpg" alt="pic-3.jpg" width="30%">
+        <hr>
+        <div class="sub-title">&diams;&nbsp;好文章連結</div>
+        <li>
+            <a href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6" target="_blank">
+                健身初學者必看！10個常見的健身迷思
+            </a>
+        </li>
+        <li>
+            <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"
+                target="_blank">
+                健身是什麼？
+            </a>
+        </li>
+        <li>
+            <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E7%9A%8410%E5%80%8B%E5%A5%BD%E8%99%95%EF%BC%81%EF%BC%88%E9%80%99%E4%BA%9B%E5%A5%BD%E8%99%95%E8%AA%AA%E6%98%8E%E4%BD%A0%E8%A9%B2%E5%81%A5%E8%BA%AB%E4%BA%86%EF%BC%81%EF%BC%89"
+                target="_blank">
+                健身的10個好處！（這些好處說明你該健身了！）
+            </a>
+        </li>
+        <li>
+            <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E7%9A%84%E9%A1%9E%E5%9E%8B%EF%BC%88%E6%89%BE%E5%88%B0%E9%81%A9%E5%90%88%E4%BD%A0%E7%9A%84%E5%81%A5%E8%BA%AB%E6%96%B9%E5%BC%8F%EF%BC%81%EF%BC%89"
+                target="_blank">
+                健身的類型（找到適合你的健身方式！）
+            </a>
+        </li>
+        <li>
+            <a href="https://fitnesstwenty.com/benefits-of-workout/#%E7%B8%BD%E7%B5%90" target="_blank">
+                總結
+            </a>
+        </li>
+        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;節錄至
+            <a href="https://fitnesstwenty.com/benefits-of-workout/">
+                https://fitnesstwenty.com/benefits-of-workout/</a></small>
+        <hr>
+        <div class="sub-title">&diams;&nbsp;一天所需卡路里</div>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>每天活動量</th>
+                    <th>體重過輕者所需熱量</th>
+                    <th>體重正常者所需熱量</th>
+                    <th>體重過重、肥胖者所需熱量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>輕度工作</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                    <td>30大卡 X 目前體重（公斤）</td>
+                    <td>20~25大卡 X 目前體重（公斤）</td>
+                </tr>
+                <tr>
+                    <td>中度工作</td>
+                    <td>40大卡 X 目前體重（公斤）</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                    <td>30大卡 X 目前體重（公斤）</td>
+                </tr>
+                <tr>
+                    <td>重度工作</td>
+                    <td>45大卡 X 目前體重（公斤）</td>
+                    <td>40大卡 X 目前體重（公斤）</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+
+        <p style="text-align: left;">
+            <b><a href="bmi.html">計算BMI:</a></b>
+            一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+
+            <b>計算所需熱量:</b>
+            因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。<br>
+
+            <b>力行健康體重管理:</b>
+            多運動和健康吃，肥胖者每天減少攝取500大卡熱量；或減少攝食300大卡熱量，增加體能活動多消耗200大卡，就可以每周減重約0.5公斤。提醒您!控制體重時，每日熱量攝取不可低於1200大卡。
         </p>
 
-        <p style="background-color: aqua;color: blue">
-            <em>如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在<br>
-                舞臺上或者是電影螢幕上綻放光彩。</em><b><u>答案就是堅持<span
-                        style="font-size: large;background-color: aquamarine;">運動健身!</span></b></u>
-        </p>
-    </div>
-    <hr>
-    <a target="_blank" href="https://fitnesstwenty.com/benefits-of-workout/">
-        <img src="https://fitnesstwenty.com/wp-content/uploads/2020/10/71.jpg" alt="健身圖片.jpg">
-    </a>
-    <div class="sub-title">健身的10個好處</div>
-    <ol type="a">
-        <li>增加基礎代謝率</li>
-        <li>預防疾病和提高免疫力</li>
-        <li>改善心情</li>
-        <li>改善睡眠</li>
-        <li>增加自信</li>
-        <li>增強記憶力</li>
-        <li>增強心肺能力</li>
-        <li>提升睡眠品質</li>
-        <li>釋放工作的壓力</li>
-        <li>增加肌肉助於減肥</li>
-    </ol>
-    <img src="images\pic-1.jpg" alt="pic-1.jpg" width="30%">
-    <img src="images\pic-2.jpg" alt="pic-2.jpg" width="30%">
-    <img src="images\pic-3.jpg" alt="pic-3.jpg" width="30%">
-    <hr>
-    <div class="sub-title">好文章連結</div>
-    <li>
-        <a href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6" target="_blank">
-            健身初學者必看！10個常見的健身迷思
-        </a>
-    </li>
-    <li>
-        <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"
-            target="_blank">
-            健身是什麼？
-        </a>
-    </li>
-    <li>
-        <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E7%9A%8410%E5%80%8B%E5%A5%BD%E8%99%95%EF%BC%81%EF%BC%88%E9%80%99%E4%BA%9B%E5%A5%BD%E8%99%95%E8%AA%AA%E6%98%8E%E4%BD%A0%E8%A9%B2%E5%81%A5%E8%BA%AB%E4%BA%86%EF%BC%81%EF%BC%89"
-            target="_blank">
-            健身的10個好處！（這些好處說明你該健身了！）
-        </a>
-    </li>
-    <li>
-        <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E7%9A%84%E9%A1%9E%E5%9E%8B%EF%BC%88%E6%89%BE%E5%88%B0%E9%81%A9%E5%90%88%E4%BD%A0%E7%9A%84%E5%81%A5%E8%BA%AB%E6%96%B9%E5%BC%8F%EF%BC%81%EF%BC%89"
-            target="_blank">
-            健身的類型（找到適合你的健身方式！）
-        </a>
-    </li>
-    <li>
-        <a href="https://fitnesstwenty.com/benefits-of-workout/#%E7%B8%BD%E7%B5%90" target="_blank">
-            總結
-        </a>
-    </li>
-    <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;節錄至
-        <a href="https://fitnesstwenty.com/benefits-of-workout/">
-            https://fitnesstwenty.com/benefits-of-workout/</a></small>
-    <hr>
-    <h2>&diams;&nbsp;一天所需卡路里</h2>
-    <table border="2">
-        <thead>
-            <tr>
-                <th>每天活動量</th>
-                <th>體重過輕者所需熱量</th>
-                <th>體重正常者所需熱量</th>
-                <th>體重過重、肥胖者所需熱量</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>輕度工作</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-                <td>30大卡 X 目前體重（公斤）</td>
-                <td>20~25大卡 X 目前體重（公斤）</td>
-            </tr>
-            <tr>
-                <td>中度工作</td>
-                <td>40大卡 X 目前體重（公斤）</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-                <td>30大卡 X 目前體重（公斤）</td>
-            </tr>
-            <tr>
-                <td>重度工作</td>
-                <td>45大卡 X 目前體重（公斤）</td>
-                <td>40大卡 X 目前體重（公斤）</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-            </tr>
-
-
-
-        </tbody>
-
-
-    </table>
-    <p>
-        <b><a href="bmi.html">計算BMI:</a></b>
-        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-
-        <b>計算所需熱量:</b>
-        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。<br>
-
-        <b>力行健康體重管理:</b>
-        多運動和健康吃，肥胖者每天減少攝取500大卡熱量；或減少攝食300大卡熱量，增加體能活動多消耗200大卡，就可以每周減重約0.5公斤。提醒您!控制體重時，每日熱量攝取不可低於1200大卡。
-    </p>
 </body>
 <hr>
 <h2>影片介紹</h2>
@@ -164,5 +243,6 @@
     </p>
 </form>
 <hr>
+</div>
 
 </html>
