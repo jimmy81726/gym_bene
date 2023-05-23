@@ -1,0 +1,90 @@
+body {
+    background-color: rgba(14, 40, 53, 0.699);
+    color: yellow;
+    font-family: 標楷體, 新細明體, 微軟正黑體;
+    text-align: center
+}
+
+.sub-title {
+    /* block/inline/inlineblock */
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: skyblue;
+    /* 1rem = 16px */
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 6px;
+}
+
+/* inline表示跟著字體大小 block(預設)就是一定要占據整列*/
+
+.title {
+    display: block;
+    width: 80%;
+    font-size: 4rem;
+    border-radius: 10px;
+    /* 上右下左 10px 20px 30px 40px */
+    margin: 20px auto;
+    padding: 20px 12px;
+    text-align: center;
+}
+
+span {
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+#container {
+    width: 80%;
+    margin: 12px auto;
+    /* auto讓左右邊各自10%  只有兩個就是上下 左右*/
+}
+
+a {
+    color: pink
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color: chartreuse
+}
+
+form {
+    background-color: rgb(238, 166, 140);
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+label,
+button {
+    font-size: 30px;
+    text-align: center;
+    margin: 16px;
+}
+
+input,
+textarea {
+    width: 80%;
+}
+
+/* 可直接從網頁用檢查爬蟲的方式看是甚麼標籤 */
+button {
+    width: 130px;
+    background-color: chartreuse;
+    border: 0px;
+    border-radius: 14px;
+    padding: 12px 0;
+}
+
+button[type="reset"] {
+    background-color: red;
+    color: aliceblue;
+}

@@ -6,13 +6,15 @@
     <title>我愛健身網站</title>
     <style>
         body {
-            background-color: rgb(11, 157, 235);
+            background-color: rgba(14, 40, 53, 0.699);
             color: yellow;
             font-family: 標楷體, 新細明體, 微軟正黑體;
             text-align: center
         }
 
         .sub-title {
+            /* block/inline/inlineblock */
+            display: inline-block;
             background-color: rgb(255, 255, 255);
             color: skyblue;
             /* 1rem = 16px */
@@ -21,11 +23,15 @@
             padding: 6px;
         }
 
+        /* inline表示跟著字體大小 block(預設)就是一定要占據整列*/
+
         .title {
+            display: block;
+            width: 80%;
             font-size: 4rem;
             border-radius: 10px;
             /* 上右下左 10px 20px 30px 40px */
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px 12px;
             text-align: center;
         }
@@ -83,11 +89,58 @@
             background-color: gold;
             color: whitesmoke;
             font-size: 1.8rem;
+            width: 100px;
         }
 
         td {
             background-color: forestgreen;
             color: rebeccapurple;
+
+        }
+
+        td:first-child {
+            background-color: black;
+        }
+
+        td:nth-child(odd) {
+            background-color: blue;
+        }
+
+        form {
+            background-color: rgb(238, 166, 140);
+            width: 60%;
+            margin: 0 auto;
+            padding: 40px;
+            color: darkblue;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea,
+        label,
+        button {
+            font-size: 30px;
+            text-align: center;
+            margin: 16px;
+        }
+
+        input,
+        textarea {
+            width: 80%;
+        }
+
+        /* 可直接從網頁用檢查爬蟲的方式看是甚麼標籤 */
+        button {
+            width: 130px;
+            background-color: chartreuse;
+            border: 0px;
+            border-radius: 14px;
+            padding: 12px 0;
+        }
+
+        button[type="reset"] {
+            background-color: red;
+            color: aliceblue;
         }
     </style>
 
@@ -240,6 +293,7 @@
     <textarea id="command" name="command" cols="25" rows="20"></textarea>
     <p>
         <button type="submit">提交</button>
+        <button type="reset">清除</button>
     </p>
 </form>
 <hr>
