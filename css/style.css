@@ -61,30 +61,14 @@ form {
     margin-bottom: 10px;
 }
 
-input,
-textarea,
-label,
-button {
-    font-size: 30px;
-    text-align: center;
-    margin: 16px;
-}
+/* 小於768px就會跑這裡,隨視窗大小改變排版 */
+@media screen and (max-width:768px) {
+    form {
+        width: 90%;
+    }
 
-input,
-textarea {
-    width: 80%;
-}
-
-/* 可直接從網頁用檢查爬蟲的方式看是甚麼標籤 */
-button {
-    width: 130px;
-    background-color: chartreuse;
-    border: 0px;
-    border-radius: 14px;
-    padding: 12px 0;
-}
-
-button[type="reset"] {
-    background-color: red;
-    color: aliceblue;
+    .sub-title {
+        width: 90%;
+        font-size: 28px;
+    }
 }
